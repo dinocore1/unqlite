@@ -654,12 +654,7 @@ typedef sxu64 pgno;
  * of the follwoing structure.
  */
 typedef struct unqlite_page unqlite_page;
-struct unqlite_page
-{
-  unsigned char *zData;       /* Content of this page */
-  void *pUserData;            /* Extra content */
-  pgno pgno;                  /* Page number for this page */
-};
+
 /*
  * UnQLite handle to the underlying Key/Value Storage Engine (See below).
  */
